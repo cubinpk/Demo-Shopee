@@ -1,0 +1,120 @@
+.header{
+    height: 120px;
+    background-image: linear-gradient(0,#fe6433,#f53e2d);
+}
+
+.header_navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.header_navbar-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.header_navbar-item{
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+
+.header_navbar-icon-link{
+    font-size: 1.8rem;
+    margin: -2px 5px;
+}
+
+.ketnoi:hover{
+    cursor: text;
+    color: var(--white-color);
+}
+
+.header_navbar-item,
+.header_navbar-item-link{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.header_navbar-item,
+.header_navbar-item-link,
+.header_navbar-icon-link{
+    display:inline-flex;
+}
+
+.header_navbar-icon-link:hover,
+.header_navbar-item:hover,
+.header_navbar-item-link:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header_navbar-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.strong{
+    font-weight: 600;
+}
+
+.space::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-left: 1px solid #757575;
+    height: 12px;
+    right: -15px;
+    top: 2px
+}
+
+/* Header QR Code */
+.header_qr{
+    background-color: #fff;
+    width: 190px;
+    position: absolute;
+    border-radius: 2px;
+    left: 3%;
+    top:110%;
+    display: none;
+    animation: fadein ease-in-out 0.6s;
+}
+
+.header_qr::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: -8px;
+    left: 0;
+    display: block;
+    height: 25px;
+}
+
+.header_navbar-item-show:hover .header_qr{
+  display: block;
+}
+
+.header_qr-img{
+    width: 100%;
+}
+
+.header_qr-app{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_qr-link:nth-child(1){
+    margin-left: 20px;
+}
+
+.header_qr-link:nth-child(2){
+    margin-right: 20px;
+}
+
+.header_qr-download{
+    height: 15px;
+}
