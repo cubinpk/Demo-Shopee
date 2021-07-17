@@ -1,5 +1,5 @@
 .header{
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0,#fe6433,#f53e2d);
 }
 
@@ -13,6 +13,7 @@
 .header_navbar-list{
     list-style: none;
     padding-left: 0;
+    margin: 4px 0 0 0;
 }
 
 .header_navbar-item{
@@ -153,7 +154,7 @@
     height: 50px;
 }
 
-.header_navbar-item-notify:hover .header_notify{
+.header_navbar-item:hover .header_notify{
     display: block;
 }
 
@@ -383,4 +384,97 @@ h3{
 .help{
     color:rgba(175, 162, 159, 0.918);
 }
+/* Header with search */
+.header-with-search{
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+}
 
+.header__logo{
+    width: 200px;
+}
+
+.header__logo-img{
+    width: 150px;
+    margin-left: 45px;
+}
+
+.header__search{
+    flex: 1;
+    height: 40px;
+    background-color: #fff;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.header__cart{
+    width: 200px;
+    text-align: center;
+}
+
+.header__cart-icon{
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+.header__search-input{
+    flex: 1;
+    height: 100%;
+    outline: none;
+    font-size: 1.4rem ;
+    color : var(--text-color);
+    padding: 0 16px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.header__search-select-label{
+    border-radius: 5px ;
+}
+.header__search-select{
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+.header__search-select:hover{
+    cursor: pointer;
+}
+
+.header__search-select-label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.header__search-select-icon{
+    font-size: 1.4rem;
+    margin : 0 10px;
+    position: relative;
+    top: -2px;
+}
+
+.header__search-btn{
+    background-color: var(--primary-color);
+    border : none;
+    height: 36px;
+    border-radius: 3px;
+    margin-right: 2px;
+    width: 4.5%;
+    outline: none;
+}
+
+.header__search-btn:hover{
+    background-color: #f56f54;
+    cursor: pointer;
+}
+
+.header__search-btn-icon{
+    font-size : 1.6rem;
+    color: #fff;
+}
